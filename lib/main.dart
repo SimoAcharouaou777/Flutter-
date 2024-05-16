@@ -4,45 +4,41 @@ import 'package:flutter/widgets.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: Scaffold(
+    home: Home(),
+  ));
+}
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
-        title : Text(
+        title: Text(
           'My first app',
-          style:TextStyle(
+          style: TextStyle(
             color: Colors.white,
             fontSize: 40.0,
             fontWeight: FontWeight.bold,
           ),
-          ),
-        centerTitle : true,
+        ),
+        centerTitle: true,
         backgroundColor: Colors.blue,
       ),
-       body: Center(
-        child:Text(
-          'hello world',
+      body: Center(
+        child: Text(
+          'Mohamed Acharouaou',
           style: TextStyle(
             color: Colors.red,
             fontSize: 30.0,
             fontWeight: FontWeight.bold,
           ),
         ),
-       ),
-       floatingActionButton: FloatingActionButton(
-        onPressed: (){
-
-        },
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
         child: Text('click me'),
         backgroundColor: Colors.red,
-       ),
-    ),
-  ));
-}
-class extends StatelessWidget{
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      
+      ),
     );
   }
 }
-
