@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'My first app',
           style: TextStyle(
             color: Colors.white,
@@ -25,14 +25,7 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blue,
       ),
       body: Center(
-        child: Text(
-          'Mohamed Acharouaou',
-          style: TextStyle(
-            color: Colors.red,
-            fontSize: 30.0,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+        child: Image.asset('assets/1photo.png'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
